@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+*{
+    /* font-family: 'Open Sans', sans-serif; */
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+body{
+    background-color: black;
+}
+
+h1{
+    color: White;
+    text-align: center;
+}
+
+div.grid_item1{
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+
+div.grid_item2{
+    grid-column: 4/5;
+    grid-row: 1/2;
+}
+
+div.grid_item3{
+    grid-column: 5/6;
+    grid-row: 1/2;
+}
+
+div.grid_item4{
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+
+div.grid_item5{
+    grid-column: 4/5;
+    grid-row: 2/3;
+}
+
+div.grid_item6{
+    grid-column: 5/6;
+    grid-row: 2/3;
+}
+
+.grid_container{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+}
+
+.square{
+    background-color: pink;
+    margin: 0.5vw;
+    width: 90%;
+    padding-top: 90%;
+    border-radius: 20%;
+}
+
+.parent{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.grid_top_bar{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.top_bar_parent{
+    background-color: beige;
+}
+
+.buttondiv{
+    text-align: center;
+    border: solid beige 3px;
+    font-weight: 600;
+    align-items: center;
+    display: grid;
+}
+
+.button1div{
+    grid-column: 3/4;
+}
+
+.button2div{
+    grid-column:5/6;
+}
+
+.button3div{
+    grid-column: 6/7;
+}
+
+#msg{
+    text-align: center;
+    font-weight: 600;
+    border: solid beige 3px;
+    display: grid;
+    align-items: center;
+}
+
+.button{
+    height: 100%;
+    text-transform: uppercase;
+    border-radius: 5%;
+}
+
+.selected{
+    background-color: lightcoral;
+}
